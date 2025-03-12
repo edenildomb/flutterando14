@@ -16,7 +16,7 @@ class Pessoa {
     required this.height
   });
 
-  double calcImc() {
+  calcImc() {
     return weight / (height * height);
   }
 }
