@@ -1,22 +1,20 @@
 void main() {
-  Pessoa p = Pessoa(name: "Edenildo Muniz", weight: 73.4, height: 1.67);
+  Pessoa p = Pessoa(nome: "Edenildo Muniz", peso: 73.4, altura: 1.67);
         
-  print("O IMC de ${p.name} é ${p.calcImc().toString().substring(0,5)}");
+  print("O IMC de ${p.nome} é ${p.calcImc().toString().substring(0, 5)}");
    
 }
 
 class Pessoa {
-  String name;
-  double weight;
-  double height;
+  String nome;
+  double peso;
+  double altura;
 
   Pessoa({
-    required this.name,
-    required this.weight,
-    required this.height
+    required this.nome, required this.peso, required this.altura
   });
 
   calcImc() {
-    return weight / (height * height);
+    return peso / (altura * altura);
   }
 }
